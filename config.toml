@@ -1,0 +1,13 @@
+baseURL = "https://aitoraznar.com/"
+languageCode = "es-es"
+title = "Aitor Aznar"
+theme = "m10c"
+[params]
+  author = "Aitor Aznar"
+  description = "Soy un desarrollador de software de Bilbao, encajo en el perfil de Fullstack developer con tecnologías como Javascript, Nodejs, Java, Apps híbridas, etc."
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/aitoraznar"
+  [[params.social]]
+    name = "twitter"
+    url = "https://twitter.com/aitoraznara"
