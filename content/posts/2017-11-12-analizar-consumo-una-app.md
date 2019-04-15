@@ -52,7 +52,7 @@ Hasta dónde yo se, no se me ha ocurrido la forma de probar 100 dispositivos a l
 Un ordenador con el móvil conectado, el propio móvil y el Android Studio abierto.
 Android Studio tiene una herramienta casi fenomenal para medir el consumo de CPU, Memoria RAM, Consumo de red y consumo de GPU. Y digo casi por que no es capaz de sacar un mínimo informe o un sumatorio del uso en el tiempo en el que lo estamos usando.
 
-[caption id="attachment_98" align="aligncenter" width="788"]![Captura de pantalla de Android Studio Monitors](/android-estudio-monitor-1024x394.png)
+[caption id="attachment_98" align="aligncenter" width="788"]![Captura de pantalla de Android Studio Monitors](/images/android-estudio-monitor-1024x394.png)
 Android Studio Monitors[/caption]
 
 
@@ -91,7 +91,7 @@ Para 1 usuario se aprecia
 
 
 
-[caption id="attachment_100" align="aligncenter" width="2032"]![](/sintick-consumo-oem-2.png)
+[caption id="attachment_100" align="aligncenter" width="2032"]![](/images/sintick-consumo-oem-2.png)
 Captura de pantalla del consumo de la app SinTick en Android Studio[/caption]
 
 

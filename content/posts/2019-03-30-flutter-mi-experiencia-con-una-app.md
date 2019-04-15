@@ -4,6 +4,8 @@ date: 2019-03-30 11:40:51+00:00
 draft: false
 title: "\n\t\t\t\tFlutter - mi experiencia y conclusiones\t\t"
 type: post
+featured_image: "/images/flutter_small.png"
+featured_image_caption: "Flutter SDK"
 url: /2019/03/flutter-mi-experiencia-con-una-app/
 categories:
 - Android
@@ -42,7 +44,7 @@ En el contexto de realizar una pequeña prueba de concepto para migrar una App e
 Tras analizar si debía invertir tiempo en React Native o Flutter, me decanté por Flutter por su facilidad para poder empezar y básicamente este video fue el que me convenció del todo.  
   
 
-
+{{< youtube gWs3UQzrhtE >}}
 
 
 
@@ -89,7 +91,7 @@ Lo que no me ha gustado:
 
 
 
-![Trozo de código de Flutter dónde se ven los comentarios para ver cuando termina un widget.](/Screenshot-2019-03-30-at-11.58.59.png)
+![Trozo de código de Flutter dónde se ven los comentarios para ver cuando termina un widget.](/images/Screenshot-2019-03-30-at-11.58.59.png)
 Fijaros en esos comentarios "//Center", "// SnackBar", "// <Widget>[]", etc
 
 

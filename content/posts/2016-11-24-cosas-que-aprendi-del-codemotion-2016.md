@@ -23,7 +23,7 @@ tags:
 ---
 
 
-				[![codemotion](/codemotion.jpg)
+				[![codemotion](/images/codemotion.jpg)
 ](https://2016.codemotion.es/)Ya he ido a varios eventos de charlas, de coding katas, de TDD, pero nunca a un **Codemotion**, este año ha primera vez que he ido. Lo he hecho con mis compañeros de [Ideable](http://www.ideable.net/).
 
 <!-- more -->

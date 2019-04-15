@@ -25,7 +25,7 @@ tags:
 
 
 
-[caption id="attachment_133" align="aligncenter" width="300"]![](/castle-451440_1280-300x212.jpg)
+[caption id="attachment_133" align="aligncenter" width="300"]![](/images/castle-451440_1280-300x212.jpg)
 El castillo encantado[/caption]
 
 

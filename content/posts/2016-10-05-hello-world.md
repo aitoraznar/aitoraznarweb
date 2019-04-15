@@ -45,7 +45,7 @@ Empezaré por presentarme, soy un desarrollador de software, nada de **arquitect
 
 
 
-[caption id="attachment_13" align="aligncenter" width="257"]![Un Stormtrooper Developer mirando su perfil](/stormtrooper_developer-257x300.jpg)
+[caption id="attachment_13" align="aligncenter" width="257"]![Un Stormtrooper Developer mirando su perfil](/images/stormtrooper_developer-257x300.jpg)
 Un Stormtrooper Developer mirando su perfil[/caption]
 
 
@@ -68,7 +68,7 @@ Me voy a proponer escribir mínimo 1 post elaborado por mes, que no es mucho pe
 
 Dejo un enlace a mi curriculum para quienes quieran verlo.
 
-[![CV Aitor Aznar Álvarez](/Selection_258-213x300.jpg)
+[![CV Aitor Aznar Álvarez](/images/Selection_258-213x300.jpg)
 ](/Aitor_Aznar_Alvarez_CV.pdf)
 
 
