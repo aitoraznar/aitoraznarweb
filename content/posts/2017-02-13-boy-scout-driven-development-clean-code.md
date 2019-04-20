@@ -2,9 +2,9 @@
 author: aitor
 date: 2017-02-13 10:32:56+00:00
 draft: false
-title: "\n\t\t\t\tBoy Scout Driven Development y el Clean Code\t\t"
+title: "Boy Scout Driven Development y el Clean Code"
 type: post
-url: /2017/02/boy-scout-driven-development-clean-code/
+url: /blog/2017/02/boy-scout-driven-development-clean-code/
 categories:
 - clean code
 ---

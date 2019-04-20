@@ -2,9 +2,9 @@
 author: aitor
 date: 2017-02-16 10:08:01+00:00
 draft: false
-title: "\n\t\t\t\tReconocimiento de voz con Ionic2 y la API de Google\t\t"
+title: "Reconocimiento de voz con Ionic2 y la API de Google"
 type: post
-url: /2017/02/reconocimiento-de-voz-con-ionic2-y-la-api-de-google/
+url: /blog/2017/02/reconocimiento-de-voz-con-ionic2-y-la-api-de-google/
 categories:
 - desarrollo
 - javascript

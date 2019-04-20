@@ -73,3 +73,6 @@ extension.zip
 extension
 
 .idea
+
+public/
+resources/_gen/

@@ -2,9 +2,11 @@
 author: aitor
 date: 2018-02-12 14:29:43+00:00
 draft: false
-title: "\n\t\t\t\tLa princesa panadera (Parte 1)\t\t"
+title: "La princesa panadera (Parte 1)"
 type: post
-url: /2018/02/la-princesa-panadera-parte-1/
+featured_image: "/images/10290-panaderia-dibujo-para-colorear-e-imprimir.jpg"
+featured_image_caption: "La princesa panadera"
+url: /blog/2018/02/la-princesa-panadera-parte-1/
 categories:
 - Coach
 - desarrollo
@@ -25,8 +27,8 @@ tags:
 
 
 
-[caption id="attachment_133" align="aligncenter" width="300"]![](/images/castle-451440_1280-300x212.jpg)
-El castillo encantado[/caption]
+![](/images/castle-451440_1280-768x543.jpg)
+<p class="image-caption">El castillo encantado</p>
 
 
 

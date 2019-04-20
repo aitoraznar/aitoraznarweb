@@ -2,9 +2,9 @@
 author: aitor
 date: 2016-11-24 12:21:38+00:00
 draft: false
-title: "\n\t\t\t\tCosas que aprendí del Codemotion 2016\t\t"
+title: "Cosas que aprendí del Codemotion 2016"
 type: post
-url: /2016/11/cosas-que-aprendi-del-codemotion-2016/
+url: /blog/2016/11/cosas-que-aprendi-del-codemotion-2016/
 categories:
 - desarrollo
 - Eventos

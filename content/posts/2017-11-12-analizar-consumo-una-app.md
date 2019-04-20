@@ -2,9 +2,9 @@
 author: aitor
 date: 2017-11-12 12:41:43+00:00
 draft: false
-title: "\n\t\t\t\tAnalizar el consumo de una App\t\t"
+title: "Analizar el consumo de una App"
 type: post
-url: /2017/11/analizar-consumo-una-app/
+url: /blog/2017/11/analizar-consumo-una-app/
 categories:
 - Android
 - AngularJS

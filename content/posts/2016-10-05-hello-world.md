@@ -2,9 +2,9 @@
 author: aitor
 date: 2016-10-05 13:50:00+00:00
 draft: false
-title: "\n\t\t\t\tHello world!\t\t"
+title: "Hello world!"
 type: post
-url: /2016/10/hello-world/
+url: /blog/2016/10/hello-world/
 categories:
 - desarrollo
 - pirata
@@ -69,7 +69,7 @@ Me voy a proponer escribir mínimo 1 post elaborado por mes, que no es mucho pe
 Dejo un enlace a mi curriculum para quienes quieran verlo.
 
 [![CV Aitor Aznar Álvarez](/images/Selection_258-213x300.jpg)
-](/Aitor_Aznar_Alvarez_CV.pdf)
+](/files/Aitor_Aznar_Alvarez_CV.pdf)
 
 
 
