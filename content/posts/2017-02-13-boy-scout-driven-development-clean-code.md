@@ -4,13 +4,14 @@ date: 2017-02-13 10:32:56+00:00
 draft: false
 title: "Boy Scout Driven Development y el Clean Code"
 type: post
+featured_image: "/images/boy-scout-1024x576.jpg"
 url: /blog/2017/02/boy-scout-driven-development-clean-code/
 categories:
 - clean code
 ---
 
 
-				Boy Scout Driven Development (BSDD). Esta entrada va de lidiar con "proyectos legacy" o proyecto heredados bien dentro de tu mismo empresa o de una externa.
+Boy Scout Driven Development (BSDD). Esta entrada va de lidiar con "proyectos legacy" o proyecto heredados bien dentro de tu mismo empresa o de una externa.
 
 <!-- more -->
 

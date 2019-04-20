@@ -4,6 +4,7 @@ date: 2016-10-05 13:50:00+00:00
 draft: false
 title: "Hello world!"
 type: post
+featured_image: "/images/stormtrooper_developer_destacada.jpg"
 url: /blog/2016/10/hello-world/
 categories:
 - desarrollo
@@ -28,7 +29,7 @@ tags:
 ---
 
 
-				No hay mejor manera que empezar con un "Hello world!" en informática. Este es mi post de iniciación al mundillo blog, por lo que cometeré toda clase de errores de principiante. Cuando uno aprende a andar en bici, hay algún que otro tropezón, así es cómo se aprende.
+No hay mejor manera que empezar con un "Hello world!" en informática. Este es mi post de iniciación al mundillo blog, por lo que cometeré toda clase de errores de principiante. Cuando uno aprende a andar en bici, hay algún que otro tropezón, así es cómo se aprende.
 
 <!-- more -->
 
@@ -40,13 +41,13 @@ Mi intención es escribir sobre todas aquellos temas que me llamen la atención,
 
 
 
-Empezaré por presentarme, soy un desarrollador de software, nada de **arquitecto de software**, **ninja developer** o **stormtrooper**, de Bilbao aunque suelo decir que soy Fullstack developer. Todo es mas "cool" en inglés, lo sabéis muy bien.
+Empezaré por presentarme, soy un desarrollador de software (nada de **arquitecto de software**, **ninja developer** o **stormtrooper**) de Bilbao aunque suelo decir que soy Fullstack developer. Todo es mas "cool" en inglés, lo sabéis muy bien.
 
 
 
 
-[caption id="attachment_13" align="aligncenter" width="257"]![Un Stormtrooper Developer mirando su perfil](/images/stormtrooper_developer-257x300.jpg)
-Un Stormtrooper Developer mirando su perfil[/caption]
+![Un Stormtrooper Developer mirando su perfil](/images/stormtrooper_developer-257x300.jpg)
+<p class="image-caption">Un Stormtrooper Developer mirando su perfil</p>
 
 
 ## Mi bagaje

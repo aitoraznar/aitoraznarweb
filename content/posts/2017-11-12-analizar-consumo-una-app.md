@@ -4,6 +4,7 @@ date: 2017-11-12 12:41:43+00:00
 draft: false
 title: "Analizar el consumo de una App"
 type: post
+featured_image: "/images/measure.png"
 url: /blog/2017/11/analizar-consumo-una-app/
 categories:
 - Android
@@ -25,7 +26,7 @@ tags:
 ---
 
 
-				Por temas del trabajo me ha tocado analizar el consumo de datos móviles de una aplicación en un uso intensivo para un gran número de usuarios. Voy a compartir cómo lo he hecho yo.
+Por temas de trabajo me ha tocado analizar el consumo de datos móviles de una aplicación en un uso intensivo para un gran número de usuarios. Voy a compartir cómo lo he hecho yo.
 
 
 ### La aplicación
@@ -52,15 +53,15 @@ Hasta dónde yo se, no se me ha ocurrido la forma de probar 100 dispositivos a l
 Un ordenador con el móvil conectado, el propio móvil y el Android Studio abierto.
 Android Studio tiene una herramienta casi fenomenal para medir el consumo de CPU, Memoria RAM, Consumo de red y consumo de GPU. Y digo casi por que no es capaz de sacar un mínimo informe o un sumatorio del uso en el tiempo en el que lo estamos usando.
 
-[caption id="attachment_98" align="aligncenter" width="788"]![Captura de pantalla de Android Studio Monitors](/images/android-estudio-monitor-1024x394.png)
-Android Studio Monitors[/caption]
+![Captura de pantalla de Android Studio Monitors](/images/android-estudio-monitor.png)
+<p class="image-caption">Android Studio Monitors</p>
 
 
 ### El estudio
 
 
-[caption id="attachment_99" align="alignright" width="169"]![Captura de pantalla del uso de datos del teléfono móvil para la app SinTick](Screenshot_20171112-125915-169x300.png)
-Uso de datos del teléfono móvil para la app SinTick[/caption]
+![Captura de pantalla del uso de datos del teléfono móvil para la app SinTick](/images/Screenshot_20171112-125915-576x1024.png)
+<p class="image-caption">Uso de datos del teléfono móvil para la app SinTick</p>
 
 Dispositivo: LG nexus 5 con Android 6 conectado a Red Wi-Fi
 Tiempo de uso: 90 segundos
@@ -91,8 +92,8 @@ Para 1 usuario se aprecia
 
 
 
-[caption id="attachment_100" align="aligncenter" width="2032"]![](/images/sintick-consumo-oem-2.png)
-Captura de pantalla del consumo de la app SinTick en Android Studio[/caption]
+![](/images/sintick-consumo-oem-2.png)
+<p class="image-caption">Captura de pantalla del consumo de la app SinTick en Android Studio</p>
 
 
 

@@ -4,6 +4,7 @@ date: 2016-11-24 12:21:38+00:00
 draft: false
 title: "Cosas que aprendí del Codemotion 2016"
 type: post
+featured_image: "/images/codemotion.png"
 url: /blog/2016/11/cosas-que-aprendi-del-codemotion-2016/
 categories:
 - desarrollo
@@ -23,8 +24,7 @@ tags:
 ---
 
 
-				[![codemotion](/images/codemotion.jpg)
-](https://2016.codemotion.es/)Ya he ido a varios eventos de charlas, de coding katas, de TDD, pero nunca a un **Codemotion**, este año ha primera vez que he ido. Lo he hecho con mis compañeros de [Ideable](http://www.ideable.net/).
+Ya he ido a varios eventos de charlas, de coding katas, de TDD, pero nunca a un **Codemotion**, este año ha primera vez que he ido. Lo he hecho con mis compañeros de [Ideable](http://www.ideable.net/).
 
 <!-- more -->
 
