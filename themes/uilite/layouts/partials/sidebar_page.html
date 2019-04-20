@@ -1,0 +1,33 @@
+{{ $sidebar := .Site.Data.sidebar }}
+{{ $social := .Site.Data.social }}
+<section id="sidebar" class="sidebar sidebar-page d-flex align-items-center p-5">
+  <div class="main-info-page">
+
+    <a class="back-arrow btn my-5 mx-5" href="#" onclick="window.history.length > 2 ? window.history.back() : window.location.href = '/'">
+      <i class="fas fa-arrow-left fa-2x"></i>
+    </a>
+
+    <img src="{{.Site.BaseURL}}images/{{ $sidebar.displayPicture }}" class="portrait rounded-circle mb-3">
+
+    <div class="social my-4">
+
+      {{ range $key, $value := $social }}
+        {{ if eq $key "mail" }}
+          <a target="_blank" href="mailto:{{ $value }}">
+            <i class="fas fa-envelope"></i>
+          </a>
+        {{ else }}
+          <a target="_blank" href="{{ $value }}">
+            <i class="fab fa-{{ $key }}"></i>
+          </a>
+        {{ end}}
+      {{ end }}
+      
+    </div>
+    
+    <a href="/#contact" class="btn btn-dark btn-lg btn-block">Contact</a>
+    <a href="/files/Aitor_Aznar_Alvarez_CV.pdf" class="btn btn-lg btn-block btn-dark-faded mt-2" target="_blank">See my CV</a>
+
+    
+  </div>
+</section>

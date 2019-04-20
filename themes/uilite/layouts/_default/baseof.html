@@ -1,0 +1,15 @@
+{{ partial "header.html" . }}
+{{if not .IsHome}}
+  {{ partial "sidebar_page.html" . }}
+{{ else }}
+  {{ partial "sidebar.html" . }}
+{{ end }}
+
+
+<div class="main-content{{if not .IsHome}}-page{{ end }} active">
+  {{ block "main" . }}
+    {{ .Content }}
+  {{ end }}
+</div>
+
+{{ partial "footer-page-scripts.html" . }}

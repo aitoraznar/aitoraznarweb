@@ -1,0 +1,47 @@
+{{ define "main" }}
+  <article class="post">
+    <header class="post-header">
+      <div class="container mt-4">
+        <h1 class="text-center heading">{{ .Title }}</h1>
+        <small class="text-center d-block text-muted">Posted on Sep 18, 2018</small>
+      </div>
+
+      <div class="featured-image-container">
+        {{ with .Params.featured_image }}
+        <div class="featured-image rounded bs" style="
+                                    background-size:cover;
+                                    background-position:center;
+                                    background-image: url('{{ . }}');">
+        </div>
+        {{ end }}
+      </div>
+
+      <div class="post-meta">
+        <div>
+          {{ partial "icon.html" (dict "ctx" $ "name" "calendar") }}
+          {{ .PublishDate.Format "Jan 2, 2006" }}
+        </div>
+        <div>
+          {{ partial "icon.html" (dict "ctx" $ "name" "clock") }}
+          {{ .ReadingTime }} min read
+        </div>
+        {{- with .Params.tags -}}
+        <div>
+          {{ partial "icon.html" (dict "ctx" $ "name" "tag") }}
+          {{ range . -}}
+            {{- with $.Site.GetPage (printf "/%s/%s" "tags" . ) -}}
+              <a class="tag" href="{{ .Permalink }}">{{ .Title }}</a>
+            {{- end -}}
+          {{- end -}}
+        </div>
+        {{- end -}}
+      </div>
+    </header>
+    <div class="post-content">
+      {{ .Content }}
+    </div>
+    <div class="post-footer">
+      {{ template "_internal/disqus.html" . }}
+    </div>
+  </article>
+{{ end }}

@@ -1,0 +1,16 @@
+*{
+  // outline: 1px solid red;
+}
+
+html{
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+a{
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+

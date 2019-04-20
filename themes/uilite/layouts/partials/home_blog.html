@@ -1,0 +1,46 @@
+<section id="blog" class="skin">
+    <h2 class="heading">
+        Blog
+    </h2>
+
+    <article>
+        <div class="row bs">
+            {{ range $index, $element := first 2 .Paginator.Pages }}
+                <div class="col-lg-6 col-md-6 col-12 mb-3 bs">
+                    <div class="card p-4 bs">
+                        <a class="mb-3 bs" href="{{ .Permalink }}">
+                            {{ with .Params.featured_image }}
+                            <div class="featuredImage rounded bs" style="
+                                background-size:cover;
+                                background-position:center;
+                                background-image: url('{{ . }}');
+                                height: 200px;
+                                background-color:#fbfbfb;">
+                            </div>
+                            {{ end }}
+                        </a>
+                        <small class="text-muted">{{ .PublishDate.Format "Jan 2, 2006" }}</small>
+                        <a href="{{ .Permalink }}" class="bs"><h3 class="h4 font-weight-bold text-dark">{{ .Title }}</h3></a>
+
+                        <div class="bs">
+                            {{- with .Params.tags -}}
+                                {{ range . -}}
+                                    {{- with $.Site.GetPage (printf "/%s/%s" "tags" . ) -}}
+                                        <a class="badge badge-light bs" href="{{ .Permalink }}">{{ .Title }}</a>
+                                    {{- end -}}
+                                {{- end -}}
+                            {{ end }}
+                            <div class="float-right bs">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {{ end }}
+        </div>
+
+        <div class="text-center mt-5 bs">
+            <a href="/blog" class="btn btn-lg btn-dark-faded bs">Browse All</a>
+        </div>
+    </article>
+</section>
