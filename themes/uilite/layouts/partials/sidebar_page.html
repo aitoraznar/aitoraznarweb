@@ -1,12 +1,12 @@
 {{ $sidebar := .Site.Data.sidebar }}
 {{ $social := .Site.Data.social }}
 <section id="sidebar" class="sidebar sidebar-page d-flex align-items-center p-5">
+
+  <a class="back-arrow btn my-5 mx-5" href="#" onclick="window.history.length > 2 ? window.history.back() : window.location.href = '/'">
+    <i class="fas fa-arrow-left fa-2x"></i>
+  </a>
+
   <div class="main-info-page">
-
-    <a class="back-arrow btn my-5 mx-5" href="#" onclick="window.history.length > 2 ? window.history.back() : window.location.href = '/'">
-      <i class="fas fa-arrow-left fa-2x"></i>
-    </a>
-
     <img src="{{.Site.BaseURL}}images/{{ $sidebar.displayPicture }}" class="portrait rounded-circle mb-3">
 
     <div class="social my-4">

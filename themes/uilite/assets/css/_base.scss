@@ -48,41 +48,41 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* page scaffold */
-.sidebar {
-  position: fixed;
-  left: 0;
-  top: 0;
-
-  right: 552px;
-  bottom: 0;
-  z-index: 1;
-  width: 40%;
-
-  height: 100%;
-}
-
-.sidebar-page {
-  width: 20%;
+.sidebar, .sidebar-page {
+  position: static;
+  width: 100%;
+  padding-left: 65px;
 }
 
 .main-content, .main-content-page {
-  position: relative;
-  overflow: visible;
-  width: 60%;
-  max-width: 1200px;
-  margin-left: 40%;
-  float: none;
-  clear: none;
+  width: 100%;
+  margin-left: 0;
 }
 
-@media (max-width: 1024px) {
-  .sidebar {
-    position: static;
-    width: 100%;
-    padding-left: 65px;
+@media (min-width: 1023px) {
+  .sidebar, .sidebar-page {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    right: 552px;
+    bottom: 0;
+    z-index: 1;
+    width: 40%;
+    height: 100%;
   }
+
+  .sidebar-page {
+    width: 20%;
+  }
+
   .main-content {
-    width: 100%;
-    margin-left: 0;
+    position: relative;
+    overflow: visible;
+    width: 60%;
+    max-width: 1200px;
+    margin-left: 40%;
+    float: none;
+    clear: none;
   }
 }
