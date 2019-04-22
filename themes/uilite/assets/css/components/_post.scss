@@ -1,4 +1,8 @@
 .sidebar-page {
+  &.p-5 {
+    padding: 0 !important;
+  }
+  
   .back-arrow {
     color: black;
   }
@@ -68,8 +72,4 @@
 
 .post-meta {
   font-size: 0.8em;
-}
-
-.p-5 {
-  padding: 0 !important;
 }
