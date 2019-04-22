@@ -1,15 +1,4 @@
-.sidebar{
-  position: fixed;
-  left: 0;
-  top: 0;
-
-  right: 552px;
-  bottom: 0;
-  z-index: 1;
-  width: 40%;
-
-  height: 100%;
-
+.sidebar {
   .main-info {
     * {
       transition: all 0.3s ease;
@@ -25,19 +14,7 @@
   }
 }
 
-.sidebar-page {
-  width: 20%;
-}
-
 .main-content, .main-content-page {
-  position: relative;
-  overflow: visible;
-  width: 60%;
-  max-width: 1200px;
-  margin-left: 40%;
-  float: none;
-  clear: none;
-
   &:after{
     position: absolute;
     content: '';
@@ -57,41 +34,6 @@
       background-color: #fff;
     }
   }
-}
-
-
-article{
-  font-size: 18px !important;
-  line-height: 1.8rem;
-  p{
-    color: rgba(0,0,0,0.8);
-  }
-
-  img{
-    max-width: 100%;
-  }
-
-  code{
-    background-color: #fbfbfb !important;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-
-  mark{
-    background-color: white;
-    color: rgb(200,0,0);
-  }
-
-}
-
-.heading,
-h1,h2,h3,h4,h5,h6{
-
-  font-family: 'Montserrat', sans-serif !important;
-  font-weight: 800;
-  text-transform: uppercase;
-
 }
 
 .heading{
@@ -123,7 +65,7 @@ h1,h2,h3,h4,h5,h6{
 
 .secondaryMenu{
   position: absolute;
-  widows: 100%;
+  width: 100%;
   // margin-top: -90px;
   transform: translateY(-90px);
   margin-left: 25px;
@@ -350,16 +292,6 @@ section{
 }
 
 @media (max-width: 1024px) {
-  .sidebar {
-    position: static;
-    width: 100%;
-    padding-left: 65px;
-  }
-  .main-content{
-    width: 100%;
-    margin-left: 0%;
-  }
-
   #timeline {
     margin: 30px;
     padding: 0px;
