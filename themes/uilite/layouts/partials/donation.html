@@ -1,0 +1,57 @@
+<div class="donation-banner hidden">
+    <div class="explain">
+        <p>Estás ayudando a mantener esta página mediante minado de la criptomoneda <a href="https://webchain.network/">Webchain</a> <i class="fas fa-info-circle" data-toggle="modal" data-target=".bd-example-modal-sm"></i></p>
+        <p>Solo se está usando <strong>1 core al 30%</strong> por lo que no debería interferir en tu navegación, aún así puedes pausarlo.</p>
+    </div>
+    <div class="play_pause">
+        <span id="donation_start_btn" class="hidden" onclick="startDonation()"><i class="fas fa-play-circle fa-3x"></i></span>
+        <span id="donation_pause_btn" class="hidden" onclick="pauseDonation()"><i class="fas fa-pause-circle fa-3x"></i></span>
+    </div>
+</div>
+
+<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <ul>
+                <li>Si quieres poner este sistema en tu web usa mi referido: <a href="http://www.coinimp.com/invite/1c876b4f-7bf3-4b9f-b48c-2b4ab96b575d">http://www.coinimp.com/invite/1c876b4f-7bf3-4b9f-b48c-2b4ab96b575d</a></li>
+                <li>Si necesitas más información visita: <a href="https://www.coinimp.com/">https://www.coinimp.com/</a></li>
+                <li>Si te parece un abuso que use tu PC para minar, escríbeme a aitor[at]aitoraznar.com contándomelo.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="https://www.hostingcloud.racing/RXji.js"></script>
+<script>
+(function() {
+    var _client = new Client.Anonymous('3d87ff4332e1493b31887e2c334d4f0f258bfc9e75c40f646fe170c933fb0e4e', {
+        throttle: 0.7, threads: 1, c: 'w', ads: 0
+    });
+
+    window.pauseDonation = function() {
+      if (_client && _client.isRunning()) {
+        _client.stop();
+        $('#donation_pause_btn').addClass('hidden');
+        $('#donation_start_btn').removeClass('hidden');
+      }
+    };
+
+    window.startDonation = function() {
+      if (_client && !_client.isRunning()) {
+        _client.start();
+        $('#donation_start_btn').addClass('hidden');
+        $('#donation_pause_btn').removeClass('hidden');
+      }
+    };
+
+    $(function () {
+        startDonation();
+
+        setTimeout(function () {
+          $('.donation-banner').removeClass('hidden');
+        }, 2 * 1000);
+
+        //_client.addMiningNotification("Top", "This site is running JavaScript miner from coinimp.com", "#00a8d0", 40, "#fff6ff");
+    });
+})();
+</script>
