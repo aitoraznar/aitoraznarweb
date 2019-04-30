@@ -1,4 +1,5 @@
 baseURL = "https://inspiring-brown-0a1d4c.netlify.com/"
+#baseURL = "https://aitoraznar.com/"
 languageCode = "es-es"
 title = "Aitor Aznar"
 theme = "uilite"
