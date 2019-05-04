@@ -1,8 +1,9 @@
 #baseURL = "https://inspiring-brown-0a1d4c.netlify.com/"
 baseURL = "https://aitoraznar.com/"
 languageCode = "es-es"
-title = "Aitor Aznar"
+title = "Aitor Aznar Álvarez"
 theme = "uilite"
-googleAnalytics = "UA-44570722-1"
 [permalinks]
   posts = "/blog"
+[params]
+  googleAnalytics = "UA-44570722-1"
