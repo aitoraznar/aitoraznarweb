@@ -73,6 +73,7 @@ extension.zip
 extension
 
 .idea
+.history
 
 public/
 resources/_gen/
