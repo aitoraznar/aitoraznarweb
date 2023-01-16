@@ -2,7 +2,12 @@
 	"title" : "Experience",
 	"experience" : [
 		{
-			"timeperiod" : "May 2016 - Present",
+			"timeperiod" : "Jun 2019 - Present",
+			"company" : "Freelance",
+			"description" : "Full stack developer; Desarrollo de soluciones en React/Nextjs, PHP, Java Spring framework. 100% remoto integrado en equipos, desarrollos desde 0 y team lead de equipos pequeños."
+		},
+		{
+			"timeperiod" : "May 2016 - Jun 2019",
 			"company" : "Ideable",
 			"description" : "Full stack developer; Desarrollo de soluciones en Java, Javascript, Apps híbridas, mentoring, formación interna,.."
 		},
