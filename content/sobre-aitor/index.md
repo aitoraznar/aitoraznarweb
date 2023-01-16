@@ -8,7 +8,7 @@ url: /blog/sobre-aitor/
 ---
 
 
-Soy desarrollador de software de Bilbao con más de <strong>10 años</strong> de experiencia, encajo en el perfil de Fullstack developer con tecnologías como Javascript, NodeJS, Java, PHP, Apps híbridas, Devops, etc.
+Soy desarrollador de software de Bilbao con más de <strong>12 años</strong> de experiencia, encajo en el perfil de Fullstack developer con tecnologías como Javascript, NodeJS, Java, PHP, Apps híbridas, Devops, etc.
 
 
 [![CV Aitor Aznar Álvarez](/images/Selection_258-150x212.jpg)](/files/Aitor_Aznar_Alvarez_CV.pdf) Mi curriculum
