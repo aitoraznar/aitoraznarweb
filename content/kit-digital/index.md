@@ -4,7 +4,7 @@ date: 2023-01-19 12:13:00+00:00
 draft: false
 title: "Kit Digital"
 type: page
-url: /kit-digital/
+url: /blog/kit-digital/
 ---
 
 # Kit digital
@@ -43,4 +43,4 @@ Aitor Aznar Álvarez, como Agente Digitalizador adherido dentro del programa Kit
 
 
 ## Rellena este formulario y me pondré en contacto contigo
-{{ partial "contact.html" . }}		
+{{ partial "contact.html" . }}
