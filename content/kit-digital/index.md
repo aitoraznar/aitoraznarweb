@@ -40,7 +40,3 @@ Aitor Aznar Álvarez, como Agente Digitalizador adherido dentro del programa Kit
 </ol>
 
 ![Agente digital autorizado](/images/Logo_Kit_Digital_Agente_Digitalizador_Autorizado.png)
-
-
-## Rellena este formulario y me pondré en contacto contigo
-{{ partial "contact.html" . }}

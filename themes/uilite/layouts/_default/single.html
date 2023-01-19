@@ -41,6 +41,8 @@
       {{ .Content }}
     </div>
     <div class="post-footer">
+      ## Rellena este formulario y me pondré en contacto contigo
+      {{ partial "contact.html" . }}
       {{ template "_internal/disqus.html" . }}
     </div>
   </article>
