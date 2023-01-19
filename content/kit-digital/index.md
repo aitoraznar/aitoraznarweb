@@ -37,8 +37,11 @@ url: /blog/kit-digital/
 1. Presencia Avanzada en Internet: páginas con requisitos a medida del cliente
 1. Marketplace
 
-![Agente digital autorizado](/images/Logo_Kit_Digital_Agente_Digitalizador_Autorizado.png)
 
+<br/>
+<br/>
+<br/>
+![Agente digital autorizado](/images/Logo_Kit_Digital_Agente_Digitalizador_Autorizado.png)
 
 <br/>
 <br/>
