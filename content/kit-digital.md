@@ -3,6 +3,7 @@ author: aitor
 date: 2023-01-19 12:13:00+00:00
 draft: false
 title: "Kit Digital"
+layout: staticpage
 type: page
 url: /kit-digital/
 categories:
