@@ -22,7 +22,7 @@ url: /blog/kit-digital/
 ### ¿Cómo conseguir el Bono digital?
 - Si cumples con las condiciones establecidas en las bases de la convocatoria de la ayuda del Kit Digital, podrás disponer de un bono digital que te permitirá acceder a las soluciones de digitalización. Aquí puedes consultar los [Requisitos](https://www.acelerapyme.es/sites/acelerapyme/files/2021-12/BOE-A-2021-21873.pdf).
 
-Aitor Aznar Álvarez, como Agente Digitalizador adherido dentro del programa Kit Digital, ofrece las siguientes soluciones de digitalización:
+<strong>Aitor Aznar Álvarez</strong>, como Agente Digitalizador adherido dentro del programa Kit Digital, ofrece las siguientes soluciones de digitalización:
 
 1. Sitio Web y Presencia básica en Internet
 1. Comercio electrónico
@@ -38,3 +38,8 @@ Aitor Aznar Álvarez, como Agente Digitalizador adherido dentro del programa Kit
 1. Marketplace
 
 ![Agente digital autorizado](/images/Logo_Kit_Digital_Agente_Digitalizador_Autorizado.png)
+
+
+<br/>
+<br/>
+<br/>
