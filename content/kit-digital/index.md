@@ -41,6 +41,7 @@ url: /blog/kit-digital/
 <br/>
 <br/>
 <br/>
+
 ![Agente digital autorizado](/images/Logo_Kit_Digital_Agente_Digitalizador_Autorizado.png)
 
 <br/>
