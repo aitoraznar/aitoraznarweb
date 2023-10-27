@@ -26,10 +26,20 @@ url: /blog/kit-digital/
 
 <strong>Aitor Aznar Álvarez</strong>, como Agente Digitalizador adherido dentro del programa Kit Digital, ofrece las siguientes soluciones de digitalización:
 
-| Servicio                                                                    |                                                     Descripción                                                      |            Presupuesto |
-| --------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------: | ---------------------: |
-| Sitio Web y Presencia básica en Internet                                    | Creación de páginas web con una personalización limitada pero suficiente que permite tener una presencia en internet |  Entre 2.000€ y 4.000€ |
-| Presencia Avanzada en Internet: páginas con requisitos a medida del cliente |             Creación o mejora de páginas web destinadas a crear una experiencia de navegación exclusiva.             | Entre 2.000€ y 40.000€ |
+### Paquete web basic
+
+- Categoría: Sitio Web y Presencia básica en Internet.
+- Creación de página web con una personalización limitada pero suficiente que permite tener una presencia en internet.
+- Incluye dominio, hosting y mantenimiento básico durante el primer año.
+- Destinado a autónomos o empresas pequeñas de 1 - 49 empleados.
+- Presupuesto entre 2.000€ y 4.000€.
+
+### Paquete web premium
+
+- Categoría: Presencia Avanzada en Internet: páginas con requisitos a medida del cliente.
+- Creación o mejora de páginas web destinadas a crear una experiencia de navegación exclusiva o de necesidades de digitalización a medida.
+- Destinado empresas que quieran destacar con sus servicios.
+- Presupuesto entre 2.000€ y 50.000€.
 
 <br/>
 <br/>
