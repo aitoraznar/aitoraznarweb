@@ -1,0 +1,30 @@
+{{ define "main" }}
+<article class="post">
+  <header class="post-header">
+    {{ if eq .Type "post" }}<p class="mono back"><a href="{{ "blog/" | absURL }}">cd ../blog</a></p>{{ end }}
+    <h1 class="post-title">{{ .Title }}</h1>
+    {{ if eq .Type "post" }}
+    <p class="post-meta mono muted">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+      <span aria-hidden="true">·</span> {{ .ReadingTime }} {{ i18n "minRead" }}
+      {{- with .GetTerms "tags" }}
+      <span aria-hidden="true">·</span>
+      {{- range . }} <a class="tag" href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a>{{ end }}
+      {{- end }}
+    </p>
+    {{ end }}
+  </header>
+
+  {{ with .Params.featured_image }}
+  <figure class="post-cover">
+    <img src="{{ . | absURL }}" alt="{{ $.Params.featured_image_caption | default $.Title }}">
+  </figure>
+  {{ end }}
+
+  <div class="prose">
+    {{ .Content }}
+  </div>
+</article>
+
+{{ if ne .Type "post" }}{{ partial "contact.html" . }}{{ end }}
+{{ end }}

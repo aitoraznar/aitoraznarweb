@@ -1,9 +1,73 @@
-#baseURL = "https://inspiring-brown-0a1d4c.netlify.com/"
 baseURL = "https://aitoraznar.com/"
-languageCode = "es-es"
 title = "Aitor Aznar Álvarez"
-theme = "uilite"
+theme = "aitor"
+defaultContentLanguage = "es"
+defaultContentLanguageInSubdir = false
+enableRobotsTXT = true
+
 [permalinks]
   posts = "/blog"
+
+[pagination]
+  pagerSize = 12
+
+[markup.highlight]
+  noClasses = true
+  style = "github-dark"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
 [params]
-  googleAnalytics = "UA-44570722-1"
+  description = "Desarrollador full stack freelance en Bilbao."
+  stack = ["React", "Next.js", "Node.js", "PHP", "Java"]
+  kitDigitalURL = "/blog/kit-digital/"
+
+[languages]
+  [languages.es]
+    languageName = "ES"
+    languageCode = "es-es"
+    weight = 1
+    [[languages.es.menu.main]]
+      name = "experiencia"
+      url = "/#experiencia"
+      weight = 1
+    [[languages.es.menu.main]]
+      name = "charlas"
+      url = "/#charlas"
+      weight = 2
+    [[languages.es.menu.main]]
+      name = "blog"
+      url = "/blog/"
+      weight = 3
+    [[languages.es.menu.main]]
+      name = "kit-digital"
+      url = "/blog/kit-digital/"
+      weight = 4
+    [[languages.es.menu.main]]
+      name = "contacto"
+      url = "/#contacto"
+      weight = 5
+
+  [languages.en]
+    languageName = "EN"
+    languageCode = "en-us"
+    weight = 2
+    [languages.en.params]
+      description = "Freelance full stack developer based in Bilbao, Spain."
+    [[languages.en.menu.main]]
+      name = "experience"
+      url = "/en/#experience"
+      weight = 1
+    [[languages.en.menu.main]]
+      name = "talks"
+      url = "/en/#talks"
+      weight = 2
+    [[languages.en.menu.main]]
+      name = "blog"
+      url = "/blog/"
+      weight = 3
+    [[languages.en.menu.main]]
+      name = "contact"
+      url = "/en/#contact"
+      weight = 4

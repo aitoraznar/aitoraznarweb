@@ -5,9 +5,9 @@ draft: false
 title: "Kit Digital"
 type: page
 url: /blog/kit-digital/
+aliases: ["/kit-digital/"]
 ---
 
-# Kit digital
 
 ![Kit digital](/images/kit_digital_banner_1.png)
 ![Kit digital](/images/kit_digital_banner_2.png)

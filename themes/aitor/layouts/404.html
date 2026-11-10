@@ -1,0 +1,9 @@
+{{ define "main" }}
+<section class="not-found">
+  <p class="mono"><span class="accent">aitor $</span> cd <span id="missing-path">?</span></p>
+  <p class="mono muted">bash: {{ i18n "notFound" }}</p>
+  <h1 class="post-title">404</h1>
+  <a class="btn btn-primary" href="{{ site.Home.RelPermalink }}">{{ i18n "backHome" }}</a>
+</section>
+<script>document.getElementById("missing-path").textContent = location.pathname;</script>
+{{ end }}

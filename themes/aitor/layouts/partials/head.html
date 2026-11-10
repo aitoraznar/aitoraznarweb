@@ -1,0 +1,78 @@
+{{- $author := site.Data.config.author -}}
+{{- $title := site.Title -}}
+{{- if not .IsHome -}}
+  {{- $title = printf "%s · %s" (.Params.heading | default .Title) site.Title -}}
+{{- end -}}
+{{- $description := .Description | default site.Params.description -}}
+{{- if and (not .Description) .IsPage -}}
+  {{- $description = .Summary | plainify | htmlUnescape | truncate 160 -}}
+{{- end -}}
+{{- $image := (.Params.featured_image | default (printf "images/%s" site.Data.sidebar.displayPicture)) | absURL -}}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ $title }}</title>
+<meta name="description" content="{{ $description }}">
+<meta name="author" content="{{ $author }}">
+<link rel="canonical" href="{{ .Permalink }}">
+{{- range .AllTranslations }}
+<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+{{- end }}
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f6f8fa" media="(prefers-color-scheme: light)">
+
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:image" content="{{ $image }}">
+<meta property="og:locale" content="{{ site.Language.LanguageCode | replace "-" "_" }}">
+<meta name="twitter:card" content="summary">
+
+{{- with .OutputFormats.Get "rss" }}
+<link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="{{ site.Title }}">
+{{- end }}
+
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("theme");
+      if (t === "light" || t === "dark") document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  })();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600;700&display=swap">
+{{ $css := resources.Get "css/main.css" | resources.Minify | resources.Fingerprint -}}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+<link rel="icon" href="{{ "favicon.ico" | relURL }}">
+
+{{- $social := site.Data.social }}
+{{- if .IsHome }}
+{{- $ld := dict
+  "@context" "https://schema.org"
+  "@type" "Person"
+  "name" $author
+  "url" site.BaseURL
+  "jobTitle" "Full stack developer"
+  "image" $image
+  "address" (dict "@type" "PostalAddress" "addressLocality" "Bilbao" "addressCountry" "ES")
+  "sameAs" (slice $social.github $social.linkedin $social.twitter)
+}}
+<script type="application/ld+json">{{ $ld | jsonify | safeJS }}</script>
+{{- else if and .IsPage (eq .Type "post") }}
+{{- $ld := dict
+  "@context" "https://schema.org"
+  "@type" "BlogPosting"
+  "headline" .Title
+  "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")
+  "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
+  "mainEntityOfPage" .Permalink
+  "image" $image
+  "inLanguage" .Language.Lang
+  "author" (dict "@type" "Person" "name" $author "url" site.BaseURL)
+}}
+<script type="application/ld+json">{{ $ld | jsonify | safeJS }}</script>
+{{- end }}

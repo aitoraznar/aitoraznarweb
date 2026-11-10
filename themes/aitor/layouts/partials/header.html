@@ -1,0 +1,20 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="prompt-home" href="{{ site.Home.RelPermalink }}" aria-label="{{ site.Title }}">
+      <span class="muted">~/</span>aitor <span class="accent">$</span>
+    </a>
+    <nav class="main-nav" aria-label="Menu">
+      <ul>
+        {{- range site.Menus.main }}
+        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{- end }}
+      </ul>
+    </nav>
+    <div class="header-tools">
+      {{ partial "lang-switch.html" . }}
+      <button class="theme-toggle" type="button" aria-label="{{ i18n "toggleTheme" }}" title="{{ i18n "toggleTheme" }}">
+        {{ partial "icons/sun.html" . }}{{ partial "icons/moon.html" . }}
+      </button>
+    </div>
+  </div>
+</header>

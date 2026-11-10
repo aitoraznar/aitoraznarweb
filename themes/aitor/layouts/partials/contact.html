@@ -1,0 +1,22 @@
+{{- $config := site.Data.config -}}
+<section class="contact" aria-labelledby="{{ i18n "contact" | urlize }}">
+  {{ partial "section-title.html" (dict "id" (i18n "contact" | urlize) "text" (i18n "contact")) }}
+  <p class="muted">{{ i18n "contactIntro" }}</p>
+  <form class="contact-form" action="https://formspree.io/{{ $config.email }}" method="post">
+    <div class="field-row">
+      <label class="field">
+        <span>{{ i18n "name" }}</span>
+        <input type="text" name="name" autocomplete="name" required>
+      </label>
+      <label class="field">
+        <span>{{ i18n "email" }}</span>
+        <input type="email" name="_replyto" autocomplete="email" required>
+      </label>
+    </div>
+    <label class="field">
+      <span>{{ i18n "message" }}</span>
+      <textarea name="message" rows="5" required></textarea>
+    </label>
+    <button type="submit" class="btn btn-primary">{{ i18n "send" }}</button>
+  </form>
+</section>

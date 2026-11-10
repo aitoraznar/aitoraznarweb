@@ -1,0 +1,18 @@
+{
+	"talks": [
+		{
+			"date": "2013-12-05",
+			"title": {
+				"es": "Knowpills: emprendimiento y e-learning",
+				"en": "Knowpills: entrepreneurship and e-learning"
+			},
+			"event": {
+				"es": "Centro San Luis · alumnos de 2º DAW y 2º ASIR",
+				"en": "Centro San Luis · web development and sysadmin students"
+			},
+			"place": "Bilbao",
+			"with": "Joseba Ruiz",
+			"url": "https://www.centrosanluis.com/noticias/20/Visita-de-la-empresa-Knowpills"
+		}
+	]
+}

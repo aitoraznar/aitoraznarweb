@@ -1,0 +1,89 @@
+{{ define "main" }}
+{{- $lang := .Language.Lang -}}
+{{- $me := site.Data.sidebar -}}
+
+<section class="hero">
+  <img class="avatar" src="{{ printf "images/%s" $me.displayPicture | absURL }}" alt="{{ site.Data.config.author }}" width="88" height="88">
+  <h1 class="hero-title">
+    <span class="accent" aria-hidden="true">&gt;</span> {{ i18n "greeting" }} <span class="accent">{{ $me.name }}</span><span class="cursor" aria-hidden="true">_</span>
+  </h1>
+  <p class="mono muted hero-role">{{ index $me.role $lang }}</p>
+  <p class="hero-lead">{{ index $me.description $lang }}</p>
+  <ul class="chips" aria-label="Stack">
+    {{- range site.Params.stack }}<li>{{ . }}</li>{{ end }}
+  </ul>
+  <div class="actions">
+    <a class="btn btn-primary" href="#{{ i18n "contact" | urlize }}">{{ i18n "contact" }}</a>
+    <a class="btn" href="{{ "files/Aitor_Aznar_Alvarez_CV.pdf" | absURL }}" target="_blank" rel="noopener">{{ i18n "seeCV" }}</a>
+  </div>
+  {{ partial "social.html" . }}
+</section>
+
+{{ with site.Data.experience.experience }}
+<section class="experience">
+  {{ partial "section-title.html" (dict "id" (i18n "experience" | urlize) "text" (i18n "experience")) }}
+  <ol class="timeline">
+    {{- range . }}
+    {{- $from := index (split .from " ") 1 }}
+    {{- $to := i18n "present" }}{{ with .to }}{{ $to = index (split . " ") 1 }}{{ end }}
+    <li class="timeline-item">
+      <p class="mono timeline-date"><span>{{ $from }}</span> <span class="accent" aria-hidden="true">→</span><span class="sr-only">–</span> <span>{{ $to }}</span></p>
+      <div>
+        <h3 class="timeline-company">{{ .company }}</h3>
+        <p class="muted">{{ index .description $lang }}</p>
+      </div>
+    </li>
+    {{- end }}
+  </ol>
+  <p class="section-more mono">
+    <a href="{{ site.Data.social.linkedin }}" target="_blank" rel="noopener">{{ i18n "linkedinMore" }} →</a>
+  </p>
+</section>
+{{ end }}
+
+{{ with site.Data.talks.talks }}
+<section class="talks">
+  {{ partial "section-title.html" (dict "id" (i18n "talks" | urlize) "text" (i18n "talks")) }}
+  <ul class="talk-list">
+    {{- range sort . "date" "desc" }}
+    <li class="talk-row">
+      <time class="mono muted" datetime="{{ .date }}">{{ .date }}</time>
+      <div>
+        <h3 class="talk-title">
+          {{- with .url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}{{ index .title $lang }}{{ with .url }} <span aria-hidden="true">↗</span></a>{{ end -}}
+        </h3>
+        <p class="muted">
+          {{ index .event $lang }}{{ with .place }} · {{ . }}{{ end }}
+          {{- with .with }} · {{ i18n "talkWith" }} {{ . }}{{ end }}
+        </p>
+      </div>
+    </li>
+    {{- end }}
+  </ul>
+</section>
+{{ end }}
+
+{{- /* Los posts solo existen en español: se leen siempre del sitio por defecto. */ -}}
+{{- $posts := where (index site.Sites 0).RegularPages "Type" "post" -}}
+{{ with $posts }}
+<section class="latest-posts">
+  {{ partial "section-title.html" (dict "text" (i18n "latestPosts")) }}
+  {{ with i18n "postsInSpanish" }}<p class="muted note">{{ . }}</p>{{ end }}
+  <ul class="post-list">
+    {{- range first 3 . }}{{ partial "post-row.html" . }}{{ end }}
+  </ul>
+  <p class="section-more mono"><a href="{{ "blog/" | absURL }}">{{ i18n "allPosts" }} →</a></p>
+</section>
+{{ end }}
+
+<section class="kit-digital card">
+  <img src="{{ "images/Logo_Kit_Digital_Agente_Digitalizador_Autorizado.png" | absURL }}" alt="Kit Digital · Agente Digitalizador Autorizado" loading="lazy">
+  <div>
+    <h2 class="card-title">{{ i18n "kitDigitalTitle" }}</h2>
+    <p class="muted">{{ i18n "kitDigitalText" }}</p>
+    <a class="mono" href="{{ site.Params.kitDigitalURL | absURL }}">{{ i18n "kitDigitalCTA" }} →</a>
+  </div>
+</section>
+
+{{ partial "contact.html" . }}
+{{ end }}

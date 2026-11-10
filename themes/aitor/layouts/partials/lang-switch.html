@@ -1,0 +1,10 @@
+{{- $page := . -}}
+<nav class="lang-switch" aria-label="Language">
+  {{- range $i, $s := site.Sites }}
+    {{- $lang := $s.Language.Lang }}
+    {{- $href := $s.Home.RelPermalink }}
+    {{- range $page.AllTranslations }}{{ if eq .Language.Lang $lang }}{{ $href = .RelPermalink }}{{ end }}{{ end }}
+    {{- if $i }}<span class="muted" aria-hidden="true">/</span>{{ end }}
+    <a href="{{ $href }}" hreflang="{{ $lang }}" lang="{{ $lang }}"{{ if eq $lang $page.Language.Lang }} aria-current="true"{{ end }}>{{ $s.Language.LanguageName }}</a>
+  {{- end }}
+</nav>

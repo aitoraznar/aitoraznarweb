@@ -1,0 +1,9 @@
+{{ define "main" }}
+<section class="listing">
+  <h1 class="post-title"><span class="accent" aria-hidden="true">$ </span>ls {{ .Title | lower }}/</h1>
+  <ul class="post-list">
+    {{- range .Paginator.Pages }}{{ partial "post-row.html" . }}{{ end }}
+  </ul>
+  {{ template "_internal/pagination.html" . }}
+</section>
+{{ end }}

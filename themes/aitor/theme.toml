@@ -1,0 +1,4 @@
+name = "aitor"
+license = "MIT"
+description = "Tema personal dev/terminal para aitoraznar.com"
+min_version = "0.128.0"

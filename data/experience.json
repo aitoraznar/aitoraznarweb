@@ -1,25 +1,40 @@
 {
-	"title" : "Experience",
-	"experience" : [
+	"experience": [
 		{
-			"timeperiod" : "Jun 2019 - Present",
-			"company" : "Freelance",
-			"description" : "Full stack developer; Desarrollo de soluciones en React/Nextjs, PHP, Java Spring framework. 100% remoto integrado en equipos, desarrollos desde 0 y team lead de equipos pequeños."
+			"from": "Jun 2019",
+			"to": "",
+			"company": "Freelance",
+			"description": {
+				"es": "Full stack developer; Desarrollo de soluciones en React/Nextjs, PHP, Java Spring framework. 100% remoto integrado en equipos, desarrollos desde 0 y team lead de equipos pequeños.",
+				"en": "Full stack developer building solutions with React/Next.js, PHP and Java Spring. 100% remote, embedded in teams, greenfield projects and lead of small teams."
+			}
 		},
 		{
-			"timeperiod" : "May 2016 - Jun 2019",
-			"company" : "Ideable",
-			"description" : "Full stack developer; Desarrollo de soluciones en Java, Javascript, Apps híbridas, mentoring, formación interna,.."
+			"from": "May 2016",
+			"to": "Jun 2019",
+			"company": "Ideable",
+			"description": {
+				"es": "Full stack developer; Desarrollo de soluciones en Java, Javascript, Apps híbridas, mentoring, formación interna,..",
+				"en": "Full stack developer building solutions with Java, JavaScript and hybrid apps; mentoring and internal training."
+			}
 		},
 		{
-			"timeperiod" : "Dic 2015 - May 2016",
-			"company" : "Grupo INIT",
-			"description" : "Full stack developer; Desarrollo de plataformas web en torno al producto para la gestión de la salud; InitHealth"
+			"from": "Dic 2015",
+			"to": "May 2016",
+			"company": "Grupo INIT",
+			"description": {
+				"es": "Full stack developer; Desarrollo de plataformas web en torno al producto para la gestión de la salud; InitHealth",
+				"en": "Full stack developer building web platforms around InitHealth, a healthcare management product."
+			}
 		},
 		{
-			"timeperiod" : "May 2014 - Dic 2015",
-			"company" : "RTVE MEdios Interactivos",
-			"description" : "Full stack developer; Arquitectura/implementación de la plataforma de rtve.es en Node.js, desarrollo del reproductor multimedia de rtve.es en HTML5"
+			"from": "May 2014",
+			"to": "Dic 2015",
+			"company": "RTVE Medios Interactivos",
+			"description": {
+				"es": "Full stack developer; Arquitectura/implementación de la plataforma de rtve.es en Node.js, desarrollo del reproductor multimedia de rtve.es en HTML5",
+				"en": "Full stack developer; architecture and implementation of the rtve.es platform in Node.js and its HTML5 media player."
+			}
 		}
 	]
 }

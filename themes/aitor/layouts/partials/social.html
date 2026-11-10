@@ -1,0 +1,7 @@
+{{- $social := site.Data.social -}}
+<ul class="social">
+  {{- with $social.github }}<li><a href="{{ . }}" rel="me noopener" target="_blank" aria-label="GitHub">{{ partial "icons/github.html" . }}</a></li>{{ end }}
+  {{- with $social.linkedin }}<li><a href="{{ . }}" rel="me noopener" target="_blank" aria-label="LinkedIn">{{ partial "icons/linkedin.html" . }}</a></li>{{ end }}
+  {{- with $social.twitter }}<li><a href="{{ . }}" rel="me noopener" target="_blank" aria-label="X / Twitter">{{ partial "icons/twitter.html" . }}</a></li>{{ end }}
+  {{- with $social.mail }}<li><a href="mailto:{{ . }}" aria-label="Email">{{ partial "icons/mail.html" . }}</a></li>{{ end }}
+</ul>
